@@ -4,7 +4,7 @@ In the time of DOS, a popular file manager called Norton Commander appeared. The
 
 Link https://hyperskill.org/projects/327
 
-Stage 1
+Stage 1 Menu first
 
 Description
 First thing first. To use your program, you need a menu. Now, create the menu for your program by following the objectives below.
@@ -26,3 +26,51 @@ Use the code snippet below for the main menu.
 | 3: File and Dir operations |
 | 4: Find Executables        |
 ------------------------------
+
+Stage 2 Who am I?
+
+Description
+Let's start with a relatively simple task. Implement the menu item 1 and 2 by following the objectives below.
+
+Objectives
+Print the main menu like in the previous step and wait for the user input;
+If the user input is 1, print operating system and node name with the help of the uname command;
+If the user input is 2, print the user information with the help of the whoami command;
+If input contains anything else than the above, keep the functionality from the previous step;
+
+Stage 3 Files and directories
+
+Description
+Time to add some functionality to the menu item 3. Your task is to list the files and directories in the current location.
+
+Objectives
+Print the main menu as in the previous steps and wait for the user input;
+If the user input is 3, print The list of files and directories:
+List the files and directories by following the structure defined in the next line. First, print the type of the listed item (F for files and D for directories), and then the name of the listed item;
+Print the file menu and wait for user input:
+If the user input is up, print Not implemented!;
+If the user input is a file or directory name, print Not implemented!;
+If the user input is 0, return to the main menu;
+If anything else, print Invalid input! and start over.
+If input contains anything else than the above, keep the functionality from the previous steps.
+Use the code snippet below for the file menu.
+
+---------------------------------------------------
+| 0 Main menu | 'up' To parent | 'name' To select |
+---------------------------------------------------
+
+Use globbing to convert file and directory names to an array:
+
+arr=(*)
+
+You can also use a loop to test if an item is a file or directory:
+
+for item in "${arr[@]}"; do
+  if [[ -f "$item" ]]; then
+    echo "do something"
+  elif [[ -d "$item" ]]; then
+    echo "do something else"
+  fi
+  echo "do another thing"
+done
+
