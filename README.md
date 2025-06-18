@@ -74,3 +74,20 @@ for item in "${arr[@]}"; do
   echo "do another thing"
 done
 
+Stage 4 Navigate
+
+Description
+In this stage, extend the functionality of the menu item 3. By following the user input, navigate through directories.
+
+Objectives
+Print the main menu as in the previous steps and wait for the user input;
+If the user input is 3 print The list of files and directories:;
+List the files and directories;
+Print the file menu and wait for user input;
+If the user input is a directory name, change directory to it, list content, and start over with the file menu;
+If the user input is up, change directory to the parent, list content, and continue with the file menu;
+If the user input is a file name, print Not implemented!;
+If the user input is 0, return to the main menu;
+If anything else, print Invalid input! and start over.
+If input contains anything else than the above, keep the functionality from the previous steps.
+
