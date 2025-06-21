@@ -91,3 +91,45 @@ If the user input is 0, return to the main menu;
 If anything else, print Invalid input! and start over.
 If input contains anything else than the above, keep the functionality from the previous steps.
 
+Stage 5 Read-only
+
+Description
+In this stage, implement file operations for the menu item 3 — delete, rename, and change permissions of the selected file.
+
+Objectives
+Print the main menu as in the previous steps and wait for the user input;
+If the user input is 3, print The list of files and directories:
+List the files and directories;
+Print the file menu and wait for user input:
+If the user input is a directory name, keep the functionality from the previous step;
+If the user input is up, keep the functionality from the previous step;
+If the user input is a file name:
+Print the file options menu;
+Wait for the user input
+If the user input is 1:
+Delete the file;
+Print file-name has been deleted.
+If the user input is 2:
+Ask for a new file name Enter the new file name:;
+Rename the file;
+Print file-name has been renamed as new-file-name
+If the user input is 3:
+Give the read-and-write access to the owner, group, and others;
+Print Permissions have been updated.;
+Print the details of the file.
+If the user input is 4:
+Give the read-and-write access to the owner and group. Give read access to others;
+Print Permissions have been updated.;
+Print the details of the file.
+If the user input is 0, go one level back;
+If the user input is invalid, print the file options menu again;
+After each valid operation, start from file menu.
+If the user input is 0, return to the main menu;
+If anything else, print Invalid input! and start over.
+If input contains anything else than the above, keep the functionality from the previous steps.
+Use the code snippet below for the file options menu:
+
+---------------------------------------------------------------------
+| 0 Back | 1 Delete | 2 Rename | 3 Make writable | 4 Make read-only |
+---------------------------------------------------------------------
+
