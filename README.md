@@ -133,3 +133,19 @@ Use the code snippet below for the file options menu:
 | 0 Back | 1 Delete | 2 Rename | 3 Make writable | 4 Make read-only |
 ---------------------------------------------------------------------
 
+Stage 6
+Where is it?
+Description
+In the last stage of the project, search for executables in your system. If an executable is found, ask for arguments and run it. Just follow the objectives below.
+
+Objectives
+Print the main menu as in the previous steps and wait for user input;
+If the user input is 4;
+Ask for an executable name Enter an executable name:
+If the executable with that name does not exist, print The executable with that name does not exist!
+If the executable with that name exists:
+Print the executable location Located in: /is/located/here;
+Ask for arguments Enter arguments:
+Run the executable with the given arguments and print the result.
+Return to the main menu.
+Anything else than the above keep the functionality from the previous steps.
